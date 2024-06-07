@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      .form {
+        padding: 20px;
+      }
+      .form label {
+        display: inline-block;
+        width: 120px;
+        text-align: right;
+        margin-right: 10px;
+      }
+      .form input[type="text"] {
+        width: 200px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <form action="">
+        <label for="name">Name: </label>
+        <input type="text" placeholder="Enter Your Name:" /><br /><br />
+        <label for="dept">Department: </label>
+        <input type="text" placeholder="Enter Your Department:" /><br /><br />
+      </form>
+    </div>
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form with Different Input Types</title>
+      </head>
+      <body>
+        <h2>Form with Different Input Types</h2>
+
+        <form action="/submit" method="post">
+          <label for="fname">Text Input:</label><br />
+          <input type="text" id="fname" name="fname" /><br />
+
+          <label for="email">Email Input:</label><br />
+          <input type="email" id="email" name="email" /><br />
+
+          <label for="password">Password Input:</label><br />
+          <input type="password" id="password" name="password" /><br />
+
+          <label for="number">Number Input:</label><br />
+          <input type="number" id="number" name="number" /><br />
+
+          <label for="date">Date Input:</label><br />
+          <input type="date" id="date" name="date" /><br />
+
+          <label for="checkbox">Checkbox:</label><br />
+          <input
+            type="checkbox"
+            id="checkbox"
+            name="checkbox"
+            value="checkbox"
+          /><br />
+
+          <label for="radio">Radio Button:</label><br />
+          <input type="radio" id="radio1" name="radio" value="option1" />
+          <label for="radio1">Option 1</label><br />
+          <input type="radio" id="radio2" name="radio" value="option2" />
+          <label for="radio2">Option 2</label><br />
+
+          <label for="textarea">Textarea:</label><br />
+          <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea
+          ><br />
+
+          <label for="select">Select:</label><br />
+          <select id="select" name="select">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option></select
+          ><br /><br />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </body>
+    </html>
+  </body>
+</html>

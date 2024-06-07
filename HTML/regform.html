@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration and Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="registration-form">
+        <h1>Registration Form</h1>
+        <img src="https://via.placeholder.com/100" alt="User Image" />
+        <form>
+          <label for="student-name">Student Name:</label>
+          <input
+            type="text"
+            id="student-name"
+            name="student-name"
+            value="Irteja Mahmud"
+          />
+
+          <label for="student-id">Student ID:</label>
+          <input
+            type="number"
+            id="student-id"
+            name="student-id"
+            placeholder="Enter a number"
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Your Email"
+          />
+
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter UserName"
+          />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter Password"
+          />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" />
+
+          <label>Gender:</label>
+          <div class="gender-options">
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+          </div>
+
+          <label>Language:</label>
+          <input
+            type="checkbox"
+            id="bengali"
+            name="language"
+            value="bengali"
+            checked
+          />
+          <label for="bengali">Bengali</label>
+          <input type="checkbox" id="english" name="language" value="english" />
+          <label for="english">English</label>
+
+          <label for="country">Country:</label>
+          <select id="country" name="country">
+            <option value="">(Please select your Country)</option>
+          </select>
+
+          <label for="address">Address:</label>
+          <textarea
+            id="address"
+            name="address"
+            rows="4"
+            placeholder="Enter Your Present Address"
+          ></textarea>
+
+          <label for="document">Attach your Document:</label>
+          <input type="file" id="document" name="document" />
+
+          <div class="form-buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="login-form">
+        <h1>Login Form</h1>
+        <form>
+          <label for="login-username">Username:</label>
+          <input
+            type="text"
+            id="login-username"
+            name="login-username"
+            placeholder="Enter Your Username"
+          />
+
+          <label for="login-password">Password:</label>
+          <input
+            type="password"
+            id="login-password"
+            name="login-password"
+            placeholder="Enter Your Password"
+          />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
