@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 20px;
+  border: 2px solid red; 
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto; 
+  grid-template-columns: 1fr; 
+  min-height: 100vh; 
+  gap: 20px;
+}
+
+.header {
+  background-color: rgb(0, 247, 234); 
+  border: 5px solid red;
+  padding: 20px;
+}
+
+.nav {
+  background-color: rgb(230, 14, 238); 
+  padding: 10px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  gap: 20px; 
+}
+
+.section {
+  display: grid;
+  background-color: blue;
+  border: 5px solid red;
+  grid-template-rows: 200px 200px 200px; 
+  gap: 10px; 
+}
+
+.artical1,
+.artical2,
+.artical3 {
+  background-color: rgb(241, 77, 247); 
+  margin: 20px;
+  padding: 10px;
+}
+
+.aside {
+  background-color: rgb(235, 17, 17); 
+  border: 3px solid black;
+  padding: 10px;
+}
+
+.footer {
+  background-color: lightblue; 
+  border: 5px solid rgb(8, 8, 8);
+  padding: 20px;
+}

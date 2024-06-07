@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX GET Request Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        #fetchButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+        }
+        #fetchButton:hover {
+            background-color: #0056b3;
+        }
+        #postTitle {
+            margin-top: 20px;
+            font-size: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <button id="fetchButton" onclick="fetchPostTitle()">Fetch Post Title</button>
+    <div id="postTitle">Click the button to load the post title.</div>
+
+    <script>
+        function fetchPostTitle() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts/3', true);
+
+            xhr.onload = function() {
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    var data = JSON.parse(xhr.responseText);
+                    document.getElementById('postTitle').textContent = data.title;
+                } else {
+                    document.getElementById('postTitle').textContent = 'Error: ' + xhr.statusText;
+                }
+            };
+
+            xhr.onerror = function() {
+                document.getElementById('postTitle').textContent = 'Error: Network Error';
+            };
+
+            xhr.send();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Message Decoder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="decoder-container">
+        <h1>Secret Message Decoder</h1>
+        <label for="encodedMessage">Encoded Message:</label>
+        <input type="text" id="encodedMessage" placeholder="Enter encoded message">
+
+        <label for="shiftValue">Shift Value:</label>
+        <input type="number" id="shiftValue" placeholder="Enter shift value">
+
+        <button onclick="decodeMessage()">Decode</button>
+
+        <p id="decodedMessage">Decoded Message: </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

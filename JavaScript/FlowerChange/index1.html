@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Lets play a game of reverse!!!!</h2>
+
+
+    <script>
+        function reverseString(str){
+            return str.split(" ").reverse().join(" ");
+
+        }
+        function display(){
+            const inputstr = document.getElementById("inputstr").value;
+const reversed = reverseString(inputstr);
+document.getElementById("output").innerHTML = reversed;
+        }
+    </script>
+
+    <label for="inputstr">Enter A String</label>
+    <input type="text" name="" id="inputstr">
+    <button onclick="display()">Reverse</button>
+    <p>Reversed String: <span id="output"></span></p>
+    
+</body>
+</html>

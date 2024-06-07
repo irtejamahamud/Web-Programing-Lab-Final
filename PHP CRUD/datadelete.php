@@ -19,9 +19,7 @@ if (isset($_GET['deleteid'])) {
     } else {
         echo "<div class='error'>Error deleting record: " . $mysqli->error . "</div>";
     }
-
     $stmt->close();
 }
-
 $mysqli->close();
 ?>
